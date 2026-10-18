@@ -1,0 +1,1 @@
+export class UpdateViajeDto{destino?:string;pais?:string;fecha?:string;estado?:string;}

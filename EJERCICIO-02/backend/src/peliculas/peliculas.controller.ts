@@ -1,0 +1,1 @@
+import { Controller,Get } from '@nestjs/common';import { PeliculasService } from './peliculas.service';@Controller('peliculas') export class PeliculasController{constructor(private readonly service:PeliculasService){}@Get() findAll(){return this.service.findAll();}}

@@ -1,0 +1,1 @@
+import { Controller,Get,Param,ParseIntPipe } from '@nestjs/common';import { MascotasService } from './mascotas.service';@Controller('mascotas') export class MascotasController{constructor(private readonly service:MascotasService){}@Get(':id') findOne(@Param('id',ParseIntPipe) id:number){return this.service.findOne(id);}}

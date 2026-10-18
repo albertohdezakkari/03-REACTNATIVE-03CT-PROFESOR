@@ -1,0 +1,1 @@
+import { Column,Entity,PrimaryGeneratedColumn } from 'typeorm';@Entity('videojuegos') export class Videojuego{@PrimaryGeneratedColumn() id:number;@Column() titulo:string;@Column() plataforma:string;@Column('decimal',{precision:3,scale:1}) puntuacion:number;@Column() genero:string;}
